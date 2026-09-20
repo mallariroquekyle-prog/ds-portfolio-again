@@ -15,9 +15,9 @@ This portfolio collects my laboratory work on neural networks and PyTorch. Each 
 :::
 
 ```python
-kyle = {
+player = {
     "program": "BS Data Science",
-    "year_level": "TODO",
+    "year_level": "4th Year",
     "focus": ["machine learning", "deep learning"],
     "framework": "PyTorch",
 }
@@ -27,7 +27,11 @@ kyle = {
 
 ## About
 
-I'm a BS Data Science student who wants to turn data into useful insights and build systems that learn from it. My coursework so far covers the foundations of deep learning, how artificial neural networks work, and hands-on tensor operations in PyTorch.
+:::{div}
+:class: book
+
+I'm a fourth-year BS Data Science student who wants to turn data into useful insights and build systems that learn from it. My coursework so far covers the foundations of deep learning, how artificial neural networks work, tensor operations in PyTorch, and applied work on convolutional neural networks.
+:::
 
 (notebooks)=
 ## Notebooks
@@ -42,7 +46,7 @@ I'm a BS Data Science student who wants to turn data into useful insights and bu
 
 How deep learning developed and where it sits within artificial intelligence. Covers machine learning, neural networks, computer vision, natural language processing, and generative AI.
 
-[Read the notebook](notebooks/00_foundations_of_deep_learning.ipynb)
+[Read the notebook](notebooks/00_Foundational%20Concept%20of%20Deep%20Learning.ipynb)
 :::
 
 :::{div}
@@ -52,7 +56,7 @@ How deep learning developed and where it sits within artificial intelligence. Co
 
 An introduction to artificial neural networks and how they learn from and process information.
 
-[Read the notebook](notebooks/01_understanding_deep_learning.ipynb)
+[Read the notebook](notebooks/01_Understanding%20Deep%20Learning.ipynb)
 :::
 
 :::{div}
@@ -62,7 +66,27 @@ An introduction to artificial neural networks and how they learn from and proces
 
 Working with PyTorch tensors: creation, attributes, indexing, slicing, reshaping, arithmetic, dot products, matrix multiplication, and NumPy integration.
 
-[Read the notebook](notebooks/02_pytorch_basics.ipynb)
+[Read the notebook](notebooks/02_PyTorch%20Basics.ipynb)
+:::
+
+:::{div}
+:class: project
+
+### Applications of Deep Learning
+
+Practical applications of deep learning using neural networks and modern machine learning techniques.
+
+[Read the notebook](notebooks/E%20-%20Applications%20of%20Deep%20Learning.ipynb)
+:::
+
+:::{div}
+:class: project
+
+### CNN Implementation
+
+A hands-on implementation of a Convolutional Neural Network, covering the major components involved in image-based deep learning.
+
+[Read the notebook](notebooks/E1%20-%20CNN%20Implementation.ipynb)
 :::
 
 ::::
@@ -107,7 +131,11 @@ Working with PyTorch tensors: creation, attributes, indexing, slicing, reshaping
 
 ## My workflow
 
+:::{div}
+:class: book
+
 I'm building a solid foundation in the full data science workflow, and I plan to apply it to projects with real-world datasets.
+:::
 
 :::{div}
 :class: workflow
@@ -133,9 +161,44 @@ I'm building a solid foundation in the full data science workflow, and I plan to
 - Model development
 :::
 
+## Gallery
+
+::::{div}
+:class: gallery
+
+:::{div}
+:class: shot
+
+![Person holding a camera up to their face while taking a mirror photo](images/camera.jpg)
+
+Camera in hand
+:::
+
+:::{div}
+:class: shot
+
+![Person smiling in an orange wig and glasses](images/costume.jpg)
+
+In costume
+:::
+
+:::{div}
+:class: shot
+
+![Grayscale photo of a cat wearing sunglasses](images/cool-cat.jpg)
+
+Cool cat
+:::
+
+::::
+
 (contact)=
 ## Contact
 
-- GitHub: https://github.com/mallariroquekyle-prog
-- Email: mallari.roquekyle@gmail.com
-- LinkedIn: https://www.linkedin.com/in/roque-kyle-mallari-04b401396/
+:::{div}
+:class: contact
+
+- GitHub: [mallariroquekyle-prog](https://github.com/mallariroquekyle-prog)
+- Email: [mallari.roquekyle@gmail.com](mailto:mallari.roquekyle@gmail.com)
+- LinkedIn: [Roque Kyle Mallari](https://www.linkedin.com/in/roque-kyle-mallari-04b401396/)
+:::

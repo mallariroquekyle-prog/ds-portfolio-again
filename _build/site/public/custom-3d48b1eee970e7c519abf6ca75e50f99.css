@@ -1,0 +1,284 @@
+/* ==========================================================
+   Kyle Mallari - Data Science Portfolio
+   Works with the MyST book-theme (Jupyter Book 2).
+   Only the classes defined in index.md are styled here, so the
+   theme's own layout, search, and navigation stay untouched.
+   ========================================================== */
+
+@import url("https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500&family=IBM+Plex+Sans:wght@400;500;600;700&display=swap");
+
+:root {
+  --kp-ink: #0f1b2d;
+  --kp-accent: #2456e6;
+  --kp-surface: #f5f7fb;
+  --kp-line: #dbe1ea;
+  --kp-muted: #566175;
+  --kp-sans: "IBM Plex Sans", system-ui, -apple-system, "Segoe UI", sans-serif;
+  --kp-mono: "IBM Plex Mono", ui-monospace, SFMono-Regular, Menlo, monospace;
+}
+
+.dark {
+  --kp-ink: #0a1322;
+  --kp-accent: #8fadff;
+  --kp-surface: #121b2b;
+  --kp-line: #26334a;
+  --kp-muted: #9aa6ba;
+}
+
+/* ---------- Typography ---------- */
+body,
+.prose {
+  font-family: var(--kp-sans);
+}
+
+h1,
+h2,
+h3 {
+  font-family: var(--kp-sans);
+  letter-spacing: -0.015em;
+}
+
+h1 {
+  font-weight: 700;
+}
+
+h2 {
+  scroll-margin-top: 5rem;
+  font-weight: 650;
+  margin-top: 3rem;
+  padding-bottom: 0.4rem;
+  border-bottom: 1px solid var(--kp-line);
+}
+
+h3 {
+  font-weight: 600;
+}
+
+code,
+pre,
+kbd {
+  font-family: var(--kp-mono);
+}
+
+pre {
+  border-radius: 6px;
+}
+
+/* ---------- Hero ---------- */
+.hero {
+  display: grid;
+  grid-template-columns: minmax(0, 1.05fr) minmax(0, 1fr);
+  gap: 2rem;
+  align-items: center;
+  margin: 1.25rem 0 2.5rem;
+  padding: 2.25rem;
+  border-radius: 10px;
+  background: var(--kp-ink);
+  border: 1px solid var(--kp-line);
+  color: #e8edf7;
+}
+
+.hero pre {
+  margin: 0;
+  font-size: 0.85rem;
+}
+
+.hero-text p {
+  margin: 0 0 1rem;
+  line-height: 1.65;
+  color: #d3dbea;
+}
+
+.hero-text p:first-child {
+  line-height: 1.35;
+}
+
+.hero-text strong {
+  color: #ffffff;
+  font-size: 1.5rem;
+  font-weight: 600;
+  letter-spacing: -0.01em;
+}
+
+.hero-text p:last-child {
+  margin: 1.5rem 0 0;
+}
+
+.hero-text p:last-child a {
+  display: inline-block;
+  margin: 0 0.6rem 0.5rem 0;
+  padding: 0.55rem 1.15rem;
+  border-radius: 6px;
+  border: 1px solid #ffffff;
+  font-weight: 600;
+  text-decoration: none;
+  color: #ffffff !important;
+}
+
+.hero-text p:last-child a:first-of-type {
+  background: #ffffff;
+  color: var(--kp-ink) !important;
+}
+
+.hero-text p:last-child a:hover {
+  background: var(--kp-accent);
+  border-color: var(--kp-accent);
+  color: #ffffff !important;
+}
+
+@media (max-width: 800px) {
+  .hero {
+    grid-template-columns: minmax(0, 1fr);
+    padding: 1.5rem;
+  }
+}
+
+/* ---------- Notebook cards ---------- */
+.project-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(15.5rem, 1fr));
+  gap: 1.25rem;
+  margin: 1.5rem 0;
+}
+
+.project {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  padding: 1.25rem 1.4rem;
+  border: 1px solid var(--kp-line);
+  border-top: 3px solid var(--kp-accent);
+  border-radius: 8px;
+  background: var(--kp-surface);
+}
+
+.project:hover {
+  border-color: var(--kp-accent);
+}
+
+.project:has(a:focus-visible) {
+  outline: 2px solid var(--kp-accent);
+  outline-offset: 3px;
+}
+
+.project h3 {
+  margin: 0 0 0.6rem;
+  font-size: 1.15rem;
+}
+
+.project p {
+  margin: 0 0 1rem;
+  font-size: 0.95rem;
+  line-height: 1.6;
+}
+
+.project p:last-child {
+  margin: auto 0 0;
+  padding-top: 0.5rem;
+}
+
+.project p:last-child a {
+  font-weight: 600;
+  color: var(--kp-accent);
+  text-decoration: underline;
+  text-underline-offset: 3px;
+}
+
+/* Makes the whole card clickable, not only the link text */
+.project p:last-child a::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+}
+
+/* ---------- Skills ---------- */
+.skill-groups {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(14rem, 1fr));
+  gap: 1.5rem;
+  margin: 1.25rem 0;
+}
+
+.skill-group p {
+  margin: 0;
+  color: var(--kp-muted);
+}
+
+.skill-group ul {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.4rem;
+  margin: 0.6rem 0 0;
+  padding: 0;
+  list-style: none;
+}
+
+.skill-group li {
+  margin: 0;
+  padding: 0.2rem 0.7rem;
+  border: 1px solid var(--kp-line);
+  border-radius: 6px;
+  background: var(--kp-surface);
+  font-family: var(--kp-mono);
+  font-size: 0.85rem;
+}
+
+.skill-group li > p {
+  margin: 0;
+  color: inherit;
+}
+
+.skill-group li::marker {
+  content: "";
+}
+
+/* ---------- Workflow (a real sequence, so it is numbered) ---------- */
+.workflow ol {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(9rem, 1fr));
+  gap: 0.6rem;
+  margin: 1.25rem 0;
+  padding: 0;
+  list-style: none;
+  counter-reset: step;
+}
+
+.workflow li {
+  margin: 0;
+  padding: 0.6rem 0.9rem;
+  border: 1px solid var(--kp-line);
+  border-radius: 6px;
+  counter-increment: step;
+  font-weight: 500;
+}
+
+.workflow li > p {
+  display: inline;
+  margin: 0;
+}
+
+.workflow li::before {
+  content: counter(step);
+  margin-right: 0.6rem;
+  font-family: var(--kp-mono);
+  font-size: 0.85rem;
+  color: var(--kp-accent);
+}
+
+.workflow li::marker {
+  content: "";
+}
+
+/* ---------- Study list ---------- */
+@media (min-width: 640px) {
+  .study ul {
+    columns: 2;
+    column-gap: 2rem;
+  }
+}
+
+/* ---------- Accessibility ---------- */
+a:focus-visible {
+  outline: 2px solid var(--kp-accent);
+  outline-offset: 3px;
+}

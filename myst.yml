@@ -3,6 +3,7 @@ version: 1
 project:
   title: "Kyle Mallari - Data Science Portfolio"
   description: "Personal data science portfolio: deep learning, PyTorch, and machine learning coursework."
+  copyright: "2026 Kyle Mallari"
   keywords:
     - Data Science
     - Deep Learning
@@ -11,28 +12,31 @@ project:
     - Python
   authors:
     - name: "Kyle Mallari"
-  # Fill these in, then remove the leading "#" so the repo link shows on your site.
-  # github: https://github.com/mallariroquekyle/ds-portfolio
+  settings:
+    output_matplotlib_strings: remove
   toc:
     - file: index.md
       title: "Home"
-
-    - title: "Portfolio"
+    - title: "Notebooks"
       children:
-        - file: "notebooks/00_Foundational Concept of Deep Learning.ipynb"
+        - file: notebooks/00_Foundational Concept of Deep Learning.ipynb
           title: "Foundations of Deep Learning"
-        - file: "notebooks/01_Understanding Deep Learning.ipynb"
+        - file: notebooks/01_Understanding Deep Learning.ipynb
           title: "Understanding Deep Learning"
-        - file: "notebooks/02_PyTorch Basics.ipynb"
+        - file: notebooks/02_PyTorch Basics.ipynb
           title: "PyTorch Basics"
+        - file: notebooks/E - Applications of Deep Learning.ipynb
+          title: "Applications of Deep Learning"
+        - file: notebooks/E1 - CNN Implementation.ipynb
+          title: "CNN Implementation"
 
 site:
   template: book-theme
   title: "Kyle Mallari"
   options:
     logo_text: "Kyle Mallari"
-    style: custom.css
-  # Top-right buttons. Uncomment and edit once you have your links.
-  # actions:
-  #   - title: GitHub
-  #     url: https://github.com/mallariroquekyle
+    favicon: images/favicon.png
+    style: ./custom.css
+  actions:
+    - title: GitHub
+      url: https://github.com/mallariroquekyle-prog
