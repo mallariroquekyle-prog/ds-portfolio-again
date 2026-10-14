@@ -29,6 +29,8 @@ project:
           title: "Applications of Deep Learning"
         - file: notebooks/E1 - CNN Implementation.ipynb
           title: "CNN Implementation"
+        - file: notebooks/Model_Inference_Lab.ipynb
+          title: "Model Inference Lab"
 
 site:
   template: book-theme
