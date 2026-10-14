@@ -89,6 +89,15 @@ A hands-on implementation of a Convolutional Neural Network, covering the major 
 [Read the notebook](notebooks/E1%20-%20CNN%20Implementation.ipynb)
 :::
 
+:::{div}
+:class: project
+
+### Model Inference Lab
+
+Evaluating pre-trained computer vision models (EfficientNet, ResNet, etc.) on a custom food dataset using PyTorch.
+
+[Read the notebook](notebooks/Model_Inference_Lab.ipynb)
+:::
 ::::
 
 ## Skills and tools
